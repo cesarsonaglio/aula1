@@ -9,7 +9,6 @@ public class Exercicio4_1 {
         while (valorcd != 0) {
             Scanner ler = new Scanner (System.in);
             System.out.println("Digite o valor do CD");
-            //valorcd = ler.nextInt();
             valorcd = ler.nextFloat();
             valortotal=valorcd+valortotal;
             cont++;
