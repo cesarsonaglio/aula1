@@ -1,8 +1,21 @@
 package Exercicios;
-
+import java.util.Scanner;
 public class Exercicio3_1 {
     public static void main(String[] args) {
-        
+        int cont=0;
+        float valorcd=1;
+        float valortotal=0;
+        System.out.println(" DIGITE ZERO PARA SAIR ");
+        while (valorcd != 0) {
+            Scanner ler = new Scanner (System.in);
+            System.out.println("Digite o valor do CD");
+            //valorcd = ler.nextInt();
+            valorcd = ler.nextFloat();
+            valortotal=valorcd+valortotal;
+            cont++;
+        }
+        cont = cont -1;
+        System.out.println("A média de investimento foi:  "+valortotal/cont);
     }
     
 }
